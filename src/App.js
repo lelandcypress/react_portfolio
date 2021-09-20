@@ -1,11 +1,14 @@
 import React from "react";
 import Header from "./components/Header";
+import PortfolioMain from "./components/PortfolioMain";
 import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
-      <p>Hello There</p>
+      <Header />
+      <PortfolioMain />
+      <Footer />
     </div>
   );
 }
