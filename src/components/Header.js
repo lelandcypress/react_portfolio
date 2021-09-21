@@ -1,8 +1,13 @@
 import React from "react";
 import Navbar from "./Navbar";
+import "./styles/Header.css";
 
 function Header(props) {
-  return <div>I'm a Head (tee hee)</div>;
+  return (
+    <header className="header-main">
+      <h1>Michael Souter</h1>
+    </header>
+  );
 }
 
 export default Header;

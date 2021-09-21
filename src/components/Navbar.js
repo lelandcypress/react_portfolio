@@ -1,11 +1,12 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 
 function Navbar() {
   return (
     <div class="row mx-0 px-0">
-      <div id="aboutBtn" className="col-3 buttons">
+      <Button id="aboutBtn" variant="outline-primary">
         About Me
-      </div>
+      </Button>
       <div id="skillsBtn" className="col-3 buttons ">
         Skills
       </div>
