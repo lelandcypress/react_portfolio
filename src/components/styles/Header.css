@@ -1,5 +1,5 @@
-.header-main {
-  background-color: 022050;
-  color: yellow;
-  border: rgb(243, 15, 15) 10px solid;
+.header {
+  background: #496D83;
+
+  border: #6d2f2f 1px solid;
 }

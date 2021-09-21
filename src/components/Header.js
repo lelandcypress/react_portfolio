@@ -4,7 +4,7 @@ import "./styles/Header.css";
 
 function Header(props) {
   return (
-    <header className="header-main">
+    <header className="header">
       <h1>Michael Souter</h1>
     </header>
   );
