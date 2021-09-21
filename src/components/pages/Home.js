@@ -1,11 +1,20 @@
 import React from "react";
+import "./Home.css";
+function Home() {
+  return (
+    <div className="container">
+      <div className="jumbotron">
+        <p class="intro-text">
+          Hello! I'm Michael, I love solving complex problems through technology
+        </p>
+        <p>
+          Proficient:
+          HTML|CSS|JavaScript|SQL|MongoDB|Node.js|Express.js|React.js
+        </p>
+        <p>Learning: Python</p>
+      </div>
+    </div>
+  );
+}
 
-function Home(){
-    return(
-<h1>WELCOME</h1>
-
-    )
-} 
-
-
-export default Home
+export default Home;

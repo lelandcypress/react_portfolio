@@ -1,11 +1,10 @@
 import React from "react";
-import Navbar from "./Navbar";
 import "./styles/Header.css";
 
 function Header(props) {
   return (
-    <header className="header">
-      <h1>Michael Souter</h1>
+    <header className="header row">
+      <h1 className="col-2">Michael Souter</h1>
     </header>
   );
 }

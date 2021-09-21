@@ -9,7 +9,7 @@ function About() {
           through technology. I have many years of leadership experience, be it
           leading Marines or guiding my clients through challenging milestones.
           My background as a Project Manager has honed my communication and
-          collaborative skills. I am currently enrolled in Full Stack Coding
+          collaborative skills. I'm a graduate of a Full Stack Coding
           Bootcamp from Southern Methodist University, where I have learned and
           applied the MVC paradigm and OOP through JavaScript, Node, Express,
           and SQL. As a performance-driven leader, I am excited to use my

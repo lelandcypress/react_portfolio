@@ -1,22 +1,49 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 
-function Navbar() {
+function Navbar({ currentPage, handlePageChange }) {
   return (
-    <div class="row mx-0 px-0">
-      <Button id="aboutBtn" variant="outline-primary">
-        About Me
-      </Button>
-      <div id="skillsBtn" className="col-3 buttons ">
-        Skills
-      </div>
-      <div id="projectBtn" className="col-3 buttons ">
-        Projects
-      </div>
-      <div id="contactBtn" className="col-3 buttons">
-        Contact Me
-      </div>
-    </div>
+    <ul className="nav nav-tabs">
+      <li className="nav-item">
+        <a
+          href="#home"
+          onClick={() => handlePageChange("Home")}
+          className={currentPage === "Home" ? "nav-link active" : "nav-link"}
+        >
+          Home
+        </a>
+      </li>
+
+      <li className="nav-item">
+        <a
+          href="#aboutme"
+          onClick={() => handlePageChange("About")}
+          className={currentPage === "About" ? "nav-link active" : "nav-link"}
+        >
+          About Me
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
+          href="#projects"
+          onClick={() => handlePageChange("Projects")}
+          className={
+            currentPage === "Projects" ? "nav-link active" : "nav-link"
+          }
+        >
+          Projects
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
+          href="#contact"
+          onClick={() => handlePageChange("Contact")}
+          className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
+        >
+          Contact Me
+        </a>
+      </li>
+     
+    </ul>
   );
 }
 
