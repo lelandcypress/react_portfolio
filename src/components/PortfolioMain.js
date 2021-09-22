@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "./Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Projects from "./pages/Projects";
+import ProjectDisplay from "./pages/ProjectDisplay";
 import Contact from "./pages/Contact";
 import Navbar from "./Navbar";
 
@@ -17,7 +17,7 @@ export default function PortfolioMain() {
       return <About />;
     }
     if (currentPage === "Projects") {
-      return <Projects />;
+      return <ProjectDisplay />;
     }
     if (currentPage === "Contact") {
       return <Contact />;

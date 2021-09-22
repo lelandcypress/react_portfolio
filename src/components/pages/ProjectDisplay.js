@@ -15,7 +15,7 @@ const projects = [
       "MySQL",
       "Sequalize",
     ],
-    image: "placeholder",
+    image: "sword_logo.png",
     gitHub: "https://github.com/lelandcypress/S.W.O.R.D",
     deployed: "https://frozen-harbor-76666.herokuapp.com/",
   },
@@ -24,7 +24,7 @@ const projects = [
     description:
       "Leveraging SQL to manage an employee roster through the command line",
     techUsed: ["JavaScript", "Node.js", "MySQL", "Inquirer.js"],
-    image: "placeholder",
+    image: "CLI.PNG",
     gitHub: "https://github.com/lelandcypress/Employee_Management_Command_Line",
     deployed:
       "https://drive.google.com/file/d/1CirnQLb6iSTCaZTXAKYkgog1cEKOoZgs/view/",
@@ -33,7 +33,7 @@ const projects = [
     name: "Team Profile Builder",
     description: "Using OOP to generate custom team profiles",
     techUsed: ["Bootstrap", "JavaScript", "Node.js", "Inquirer.js"],
-    image: "placeholder",
+    image: "team.PNG",
     gitHub: "https://github.com/lelandcypress/Team-Profile-Builder",
     deployed:
       "https://drive.google.com/file/d/1VoMvyUYqw2uR-X5GvifhDP9WIDLVwJmE/view",
@@ -42,7 +42,7 @@ const projects = [
     name: "Jacobs Weather",
     description: "A weather app making use of two API endpoints.",
     techUsed: ["Bootstrap", "JavaScript"],
-    image: "placeholder",
+    image: "Sun.PNG",
     gitHub: "https://github.com/lelandcypress/Jacobs_Weather",
     deployed: "https://lelandcypress.github.io/Jacobs_Weather/",
   },
@@ -51,7 +51,7 @@ const projects = [
     description:
       "A handy web application that helps you meet your goals by logging your workouts..",
     techUsed: ["JavaScript", "MongoDB"],
-    image: "placeholder",
+    image: "chart.PNG",
     gitHub: "https://github.com/lelandcypress/workout_tracker",
     deployed: "https://stark-oasis-70234.herokuapp.com//",
   },
@@ -60,18 +60,26 @@ const projects = [
     name: "Coding Quiz",
     description: "Test your basic JavaScript Knowledge and see your score.",
     techUsed: ["JavaScript", "Bootstrap"],
-    image: "placeholder",
+    image: "question-1127660_1280.jpg",
     gitHub: "https://github.com/lelandcypress/Coding-Quiz",
     deployed: "https://lelandcypress.github.io/Coding-Quiz/",
   },
 ];
 
-export default function ProjectDisplay(){
-    return (
-        <div>
-            {projects.map((project)=>(
-                <Projects name ={project.name} description={project.description} techUsed={project.techUsed} image ={project.image} gitHub={project.gitHub} deployed ={project.deployed} key={project.id} />
-            ))}
-        </div>
-    )
+export default function ProjectDisplay() {
+  return (
+    <div>
+      {projects.map((project) => (
+        <Projects
+          name={project.name}
+          description={project.description}
+          techUsed={project.techUsed}
+          image={project.image}
+          gitHub={project.gitHub}
+          deployed={project.deployed}
+          key={project.id}
+        />
+      ))}
+    </div>
+  );
 }
