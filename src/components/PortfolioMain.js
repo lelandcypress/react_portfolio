@@ -28,18 +28,18 @@ export default function PortfolioMain() {
 
   return (
     <div className="container-fluid">
-      <div className="row header">
+      <div className="row header border">
         <div className="col-6">
           <Header />
         </div>
-        <div className="col-3">
+        <div className="col-6 d-flex justify-content-end align-items-end">
           <Navbar
             currentPage={currentPage}
             handlePageChange={handlePageChange}
           />
         </div>
       </div>
-          {renderPage()}
+      {renderPage()}
     </div>
   );
 }
