@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Contact.css";
 
 class Contact extends React.Component {
   constructor(props) {
@@ -22,7 +23,7 @@ class Contact extends React.Component {
   render() {
     return (
       <div clasName="container">
-        <div className="card w-50 mx-2 p-4 my-5">
+        <div className="card responsive-width mx-2 p-4 my-5">
           <div>
             <h1>Contact</h1>
           </div>
