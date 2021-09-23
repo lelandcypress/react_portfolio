@@ -1,6 +1,7 @@
 import React from "react";
 import picture from "./srcPics/profile.PNG";
 import "../styles/About.css";
+import "./pdf/Michael_Souter_ Full_Stack_Resume.pdf";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
@@ -65,6 +66,13 @@ function About() {
             React <GrReactjs />
           </li>
         </ul>
+        <a
+          target="_blank"
+          href="./pdf/Michael_Souter_ Full_Stack_Resume.pdf"
+          download
+        >
+          <p>Resume</p>
+        </a>
       </div>
     </div>
   );
