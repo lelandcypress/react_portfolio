@@ -1,10 +1,10 @@
 import React from "react";
-import chart from "./projPics/chart.PNG";
-import cli from "./projPics/CLI.PNG";
-import sword from "./projPics/sword_logo.png";
-import question from "./projPics/question-1127660_1280.jpg";
-import sun from "./projPics/Sun.PNG";
-import team from "./projPics/team.PNG";
+import chart from "./srcPics/chart.PNG";
+import cli from "./srcPics/CLI.PNG";
+import sword from "./srcPics/sword_logo.png";
+import question from "./srcPics/question-1127660_1280.jpg";
+import sun from "./srcPics/Sun.PNG";
+import team from "./srcPics/team.PNG";
 
 const allImages = {
   ["chart.PNG"]: chart,

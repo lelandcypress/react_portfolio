@@ -1,9 +1,13 @@
 import React from "react";
+import picture from "./srcPics/profile.PNG";
 
 function About() {
   return (
     <div className="container my-4">
       <div className="jumbotron my-4" id="about-me">
+        <figure id ="profContainer">
+          <img id ="profPic" src={picture} alt="profile-pic"></img>
+        </figure>
         <p className="p-4">
           I am a Full Stack developer eager to develop high quality solutions
           through technology. I have many years of leadership experience, be it
