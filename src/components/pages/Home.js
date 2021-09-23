@@ -4,10 +4,12 @@ function Home() {
   return (
     <div className="container">
       <div className="jumbotron">
-        <p class="intro-text">
-          Hello! I'm Michael, I love solving complex problems through technology
-        </p>
-       
+        <div className="big-hook">
+          <p class="intro-text">Welcome</p>
+        </div>
+        <div>
+          <p>Let's build something amazing together!</p>
+        </div>
       </div>
     </div>
   );

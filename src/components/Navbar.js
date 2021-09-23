@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs">
+    <ul className="nav navcss">
       <li className="nav-item">
         <a
           href="#home"
@@ -42,7 +42,6 @@ function Navbar({ currentPage, handlePageChange }) {
           Contact Me
         </a>
       </li>
-     
     </ul>
   );
 }

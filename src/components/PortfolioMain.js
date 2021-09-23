@@ -27,16 +27,19 @@ export default function PortfolioMain() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div className="row">
-      <div className="col">
-        <Header className="row" />
-        <Navbar
-          currentPage={currentPage}
-          handlePageChange={handlePageChange}
-          className="row"
-        />
-        {renderPage()}
+    <div className="container-fluid">
+      <div className="row header">
+        <div className="col-6">
+          <Header />
+        </div>
+        <div className="col-3">
+          <Navbar
+            currentPage={currentPage}
+            handlePageChange={handlePageChange}
+          />
+        </div>
       </div>
+          {renderPage()}
     </div>
   );
 }
