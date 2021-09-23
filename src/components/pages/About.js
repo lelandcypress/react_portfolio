@@ -1,12 +1,26 @@
 import React from "react";
 import picture from "./srcPics/profile.PNG";
+import "../styles/About.css";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3 } from "react-icons/fa";
+import { FaBootstrap } from "react-icons/fa";
+import { FaJs } from "react-icons/fa";
+import { GrMysql } from "react-icons/gr";
+import { DiMongodb } from "react-icons/di";
+import { GrNode } from "react-icons/gr";
+import { GrReactjs } from "react-icons/gr";
 
 function About() {
   return (
     <div className="container my-4">
       <div className="jumbotron my-4" id="about-me">
-        <figure id ="profContainer">
-          <img id ="profPic" src={picture} alt="profile-pic"></img>
+        <figure id="profContainer" className="rounded">
+          <img
+            id="profPic"
+            className="rounded-circle borderc mt-2"
+            src={picture}
+            alt="profile-pic"
+          ></img>
         </figure>
         <p className="p-4">
           I am a Full Stack developer eager to develop high quality solutions
@@ -20,6 +34,37 @@ function About() {
           skills and collaborative nature to help your team to continue to
           develop innovative, and exciting products.
         </p>
+
+        <ul className="skill-list">
+          <h3>Skilled in</h3>
+          <li>
+            HTML <FaHtml5 />
+          </li>
+          <li>
+            CSS <FaCss3 />
+          </li>
+          <li>
+            Bootstrap <FaBootstrap />
+          </li>
+          <li>
+            JavaScript <FaJs />
+          </li>
+          <li>
+            SQL <GrMysql />
+          </li>
+          <li>
+            MongoDB <DiMongodb />
+          </li>
+          <li>
+            Node.js <GrNode />
+          </li>
+          <li>
+            Express <GrNode />
+          </li>
+          <li>
+            React <GrReactjs />
+          </li>
+        </ul>
       </div>
     </div>
   );
