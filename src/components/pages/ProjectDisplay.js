@@ -60,7 +60,7 @@ const projects = [
     name: "Coding Quiz",
     description: "Test your basic JavaScript Knowledge and see your score.",
     techUsed: ["JavaScript", "Bootstrap"],
-    image: "question-1127660_1280.jpg",
+    image: "questionmark.png",
     gitHub: "https://github.com/lelandcypress/Coding-Quiz",
     deployed: "https://lelandcypress.github.io/Coding-Quiz/",
   },
@@ -68,7 +68,7 @@ const projects = [
 
 export default function ProjectDisplay() {
   return (
-    <div>
+    <div className="row d-flex justify-content-around">
       {projects.map((project) => (
         <Projects
           name={project.name}

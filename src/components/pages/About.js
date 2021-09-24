@@ -14,16 +14,16 @@ import { GrReactjs } from "react-icons/gr";
 function About() {
   return (
     <div className="container my-4">
-      <div className="jumbotron my-4" id="about-me">
+      <div className="jumbotron my-4 about-border" id="about-me">
         <figure id="profContainer" className="rounded">
           <img
             id="profPic"
-            className="rounded-circle borderc mt-2"
+            className="rounded-circle borderc mt-2 "
             src={picture}
             alt="profile-pic"
           ></img>
         </figure>
-        <p className="p-4">
+        <p className="p-5">
           I am a Full Stack developer eager to develop high quality solutions
           through technology. I have many years of leadership experience, be it
           leading Marines or guiding my clients through challenging milestones.
