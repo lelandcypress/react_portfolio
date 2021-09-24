@@ -3,7 +3,14 @@
 
   border: #6d2f2f 1px solid;
 }
-.nav-item{
-  color:black;
-  font-size: larger;
+.nav-item {
+  margin-left: 2%;
 }
+
+.navcss {
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+

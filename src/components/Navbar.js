@@ -1,49 +1,50 @@
 import React from "react";
 import "./styles/Header.css";
+import "./styles/responsive.css";
 
 function Navbar({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav navcss">
-      <li className="nav-item">
-        <a
-          href="#home"
-          onClick={() => handlePageChange("Home")}
-          className={currentPage === "Home" ? "nav-link active" : "nav-link"}
-        >
-          Home
-        </a>
-      </li>
+    <div className="w-100 ">
+      <ul className="nav d-flex justify-content-around">
+        <li className="nav-item">
+          <a
+            href="#home"
+            onClick={() => handlePageChange("Home")}
+            className="navcss"
+          >
+            Home
+          </a>
+        </li>
 
-      <li className="nav-item">
-        <a
-          href="#aboutme"
-          onClick={() => handlePageChange("About")}
-          className={currentPage === "About" ? "nav-link active" : "nav-link"}
-        >
-          About Me
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#projects"
-          onClick={() => handlePageChange("Projects")}
-          className={
-            currentPage === "Projects" ? "nav-link active" : "nav-link"
-          }
-        >
-          Projects
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#contact"
-          onClick={() => handlePageChange("Contact")}
-          className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
-        >
-          Contact Me
-        </a>
-      </li>
-    </ul>
+        <li className="nav-item">
+          <a
+            href="#aboutme"
+            onClick={() => handlePageChange("About")}
+            className="navcss"
+          >
+            About Me
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#projects"
+            onClick={() => handlePageChange("Projects")}
+            className="navcss"
+          >
+            Projects
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#contact"
+            onClick={() => handlePageChange("Contact")}
+            className="navcss"
+          >
+            Contact Me
+          </a>
+        </li>
+      </ul>
+    </div>
   );
 }
 

@@ -31,7 +31,7 @@
   }
 }
 .welcome {
-  font-size: 3.5em;
+  font-size: 3em;
 
   text-align: center;
 }
@@ -43,12 +43,3 @@
   border: solid 10px black;
 }
 
-@media screen and (max-width: 450px) {
-  .welcome {
-    font-size: 1em;
-  }
-
-  .home-border {
-    border: solid 5px black;
-  }
-}

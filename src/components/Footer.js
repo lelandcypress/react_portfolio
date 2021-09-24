@@ -13,7 +13,7 @@ function Footer() {
             <a
               href="https://www.linkedin.com/in/michael-souter-3a61953b/"
               target="_blank"
-              className="col-4"
+              className="col-4" rel="noreferrer"
             >
               <FaLinkedin size={50} />
             </a>
@@ -21,7 +21,7 @@ function Footer() {
             <a
               href="https://github.com/lelandcypress"
               target="_blank"
-              className="col-4"
+              className="col-4" rel="noreferrer"
             >
               <FaGithub size={50} />
             </a>
@@ -29,7 +29,7 @@ function Footer() {
             <a
               href="mailto: souterm1@gmail.com"
               target="_blank"
-              className="col-4"
+              className="col-4" rel="noreferrer"
             >
               <HiOutlineMailOpen size={50} />
             </a>
