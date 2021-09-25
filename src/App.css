@@ -3,4 +3,7 @@
 #root {
   font-family: "Oswald", sans-serif;
 }
-
+.main {
+  background-image: url("./components/background/background.png");
+  height: 100vh;
+}

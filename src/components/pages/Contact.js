@@ -40,7 +40,7 @@ function Contact() {
 
   return (
     <div className="container">
-      <div className="card responsive-width mx-2 p-4 my-5">
+      <div className="card responsive-width mx-2 p-4 my-5 border border-dark">
         <div>
           <h1>Contact</h1>
         </div>
