@@ -20,7 +20,7 @@ export default function Projects(props) {
   return (
     <div className="d-flex mx-2 my-4 col-xl-3 col-md-4 flex-wrap cards bordercustom">
       <div className="w-100">
-        <figure className="d-flex justify-content-center">
+        <figure className="d-flex row">
           <figcaption className="projtitle">{props.name}</figcaption>
           <p className="projDescription">{props.description}</p>
         </figure>
@@ -29,18 +29,13 @@ export default function Projects(props) {
           src={allImages[props.image]}
           alt="my_project"
         ></img>
-        <ul>
-          <span>Tech Used</span>
-          {props.techUsed.map((element) => (
-            <li className="listDisplay">{element}</li>
-          ))}
-        </ul>
-        <div>
+
+        <div className="my-4 mx-2">
           <a href={props.gitHub} target="_blank" rel="noreferrer">
             <button>Github</button>
           </a>
           <a href={props.deployed} target="_blank" rel="noreferrer">
-            <button>Live Demo</button>
+            <button className="mx-3">Live Demo</button>
           </a>
         </div>
       </div>

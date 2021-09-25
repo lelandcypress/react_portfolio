@@ -5,7 +5,7 @@ const projects = [
   {
     name: "S.W.O.R.D",
     description:
-      "A Project Task Management App designed for the modern superhero",
+      "A full stack Project Task Management App designed for the modern superhero. Developed with Sequalize, Handlebars, and JavaScript.",
     techUsed: [
       "Bootstrap",
       "JavaScript",
@@ -22,7 +22,7 @@ const projects = [
   {
     name: "Employee Management Command Line",
     description:
-      "Leveraging SQL to manage an employee roster through the command line",
+      "Manage your employee roster through the command line. Using Node, Inquirer, and SQL perform the full range of CRUD operations.",
     techUsed: ["JavaScript", "Node.js", "MySQL", "Inquirer.js"],
     image: "CLI.PNG",
     gitHub: "https://github.com/lelandcypress/Employee_Management_Command_Line",
@@ -31,7 +31,8 @@ const projects = [
   },
   {
     name: "Team Profile Builder",
-    description: "Using OOP to generate custom team profiles",
+    description:
+      "Using the Command line and a little OOP to generate custom team profiles that render on an HTML file. Developed with JavaScript and Node.js",
     techUsed: ["Bootstrap", "JavaScript", "Node.js", "Inquirer.js"],
     image: "team.PNG",
     gitHub: "https://github.com/lelandcypress/Team-Profile-Builder",
@@ -40,7 +41,8 @@ const projects = [
   },
   {
     name: "Jacobs Weather",
-    description: "A weather app making use of two API endpoints.",
+    description:
+      "Named for my youngest son, who wanted to help develop an app at three months old. A Front end Javascript weather app making use of two API endpoints.",
     techUsed: ["Bootstrap", "JavaScript"],
     image: "Sun.PNG",
     gitHub: "https://github.com/lelandcypress/Jacobs_Weather",
@@ -49,7 +51,7 @@ const projects = [
   {
     name: "Workout Tracker",
     description:
-      "A handy web application that helps you meet your goals by logging your workouts..",
+      "A handy web application that helps you meet your goals by logging your workouts. Using MongoDB and Mongoose.",
     techUsed: ["JavaScript", "MongoDB"],
     image: "chart.PNG",
     gitHub: "https://github.com/lelandcypress/workout_tracker",
@@ -58,7 +60,8 @@ const projects = [
 
   {
     name: "Coding Quiz",
-    description: "Test your basic JavaScript Knowledge and see your score.",
+    description:
+      "Test your JavaScript Knowledge and see your score. Careful! You are being timed.",
     techUsed: ["JavaScript", "Bootstrap"],
     image: "questionmark.png",
     gitHub: "https://github.com/lelandcypress/Coding-Quiz",

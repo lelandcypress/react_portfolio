@@ -1,68 +1,100 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Contact.css";
+import { validateEmail } from "../utils/helper";
 
-class Contact extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: " ",
-    };
+function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
+  const handleInputChange = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
 
-  handleChange(event) {
-    this.setState({ value: event.target.value });
-  }
+    if (inputType === "name") {
+      setName(inputValue);
+    } else if (inputType === "email") {
+      setEmail(inputValue);
+    } else {
+      setMessage(inputValue);
+    }
+  };
 
-  handleSubmit(event) {
-    event.preventDefault();
-  }
+  const handleFormSubmit = (e) => {
+    // Preventing the default behavior of the form submit (which is to refresh the page)
+    e.preventDefault();
 
-  render() {
-    return (
-      <div clasName="container">
-        <div className="card responsive-width mx-2 p-4 my-5">
-          <div>
-            <h1>Contact</h1>
-          </div>
-          <form onSubmit={this.handleSubmit}>
-            <div className="form-group">
-              <label>Name</label>
-              <input
-                type="text"
-                className="form-control"
-                id="contactName"
-                value={this.state.value}
-                onChange={this.handleChange}
-              />
-            </div>
-            <div className="form-group">
-              <label className="mt-3">Email</label>
-              <input
-                type="text"
-                className="form-control"
-                id="contactEmail"
-                value={this.state.value}
-                onChange={this.handleChange}
-              />
-            </div>
-            <div className="form-group">
-              <label className="mt-3">Message</label>
-              <textarea
-                rows="3"
-                className="form-control mb-4"
-                value={this.state.value}
-                onChange={this.handleChange}
-              />
-            </div>
-            <input className="btn btn-primary" type="submit" value="Submit" />
-          </form>
+    if (!validateEmail(email)) {
+      setErrorMessage("Please enter valid email address");
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+    }
+
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
+  return (
+    <div className="container">
+      <div className="card responsive-width mx-2 p-4 my-5">
+        <div>
+          <h1>Contact</h1>
         </div>
+        <form onSubmit={handleFormSubmit}>
+          <div className="form-group">
+            <label>Name</label>
+            <input
+              name="name"
+              type="text"
+              className="form-control"
+              id="name"
+              value={name}
+              onChange={handleInputChange}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label className="mt-3">Email</label>
+            <input
+              name="email"
+              type="text"
+              className="form-control"
+              id="contactEmail"
+              value={email}
+              onChange={handleInputChange}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label className="mt-3">Message</label>
+            <textarea
+              name="message"
+              rows="3"
+              className="form-control mb-4"
+              value={message}
+              onChange={handleInputChange}
+              required
+            />
+          </div>
+          <button
+            className="btn btn-primary"
+            type="button"
+            onClick={handleFormSubmit}
+          >
+            Submit
+          </button>
+        </form>
+        {errorMessage && (
+          <div>
+            <p className="error-text">{errorMessage}</p>
+          </div>
+        )}
       </div>
-    );
-  }
+    </div>
+  );
 }
-
 export default Contact;
