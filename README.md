@@ -12,7 +12,7 @@
 
 I build out a collection of my best projects in an SPA using React.js. As you look through my colection of projects you will see my journey as a Full Stack Developer evolve from front end JS applications, integrating API calls, all the way to building various backend technologies; the projects I have highlighted best demonstrate this journey.
 
-### Deployed URL :
+### Deployed URL : https://lelandcypress.github.io/react_portfolio/
 
 ## Installation
 
@@ -20,7 +20,7 @@ You should be able to navigate my site through the deployed URL
 
 ## License
 
-MIT ![MIT](./assets/MIT.svg)
+MIT 
 
 ## Contribution
 
