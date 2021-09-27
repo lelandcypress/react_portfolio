@@ -26,18 +26,16 @@ const projects = [
     techUsed: ["JavaScript", "Node.js", "MySQL", "Inquirer.js"],
     image: "CLI.PNG",
     gitHub: "https://github.com/lelandcypress/Employee_Management_Command_Line",
-    deployed:
-      "https://drive.google.com/file/d/1CirnQLb6iSTCaZTXAKYkgog1cEKOoZgs/view/",
+    deployed: "https://youtu.be/11b8yqhuitI",
   },
   {
-    name: "Team Profile Builder",
+    name: "Dinner and Drinks",
     description:
-      "Using the Command line and a little OOP to generate custom team profiles that render on an HTML file. Developed with JavaScript and Node.js",
+      "A front end app designed to help take the guesswork out of dinner plans. Enjoy your meal, brought to you by Tailwind.css, JavaScript, and three API Calls",
     techUsed: ["Bootstrap", "JavaScript", "Node.js", "Inquirer.js"],
-    image: "team.PNG",
-    gitHub: "https://github.com/lelandcypress/Team-Profile-Builder",
-    deployed:
-      "https://drive.google.com/file/d/1VoMvyUYqw2uR-X5GvifhDP9WIDLVwJmE/view",
+    image: "Dinner.PNG",
+    gitHub: "https://github.com/lelandcypress/What-is-for-dinner",
+    deployed: "https://lelandcypress.github.io/What-is-for-dinner/",
   },
   {
     name: "Jacobs Weather",

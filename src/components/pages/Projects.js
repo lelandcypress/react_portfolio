@@ -4,7 +4,7 @@ import cli from "./srcPics/CLI.PNG";
 import sword from "./srcPics/sword_logo.png";
 import question from "./srcPics/questionmark.png";
 import sun from "./srcPics/Sun.PNG";
-import team from "./srcPics/team.PNG";
+import dinner from "./srcPics/Dinner.PNG";
 import "../styles/Project.css";
 
 const allImages = {
@@ -13,7 +13,7 @@ const allImages = {
   "sword_logo.png": sword,
   "questionmark.png": question,
   "Sun.PNG": sun,
-  "team.PNG": team,
+  "Dinner.PNG": dinner,
 };
 
 export default function Projects(props) {
@@ -32,10 +32,10 @@ export default function Projects(props) {
 
         <div className="my-4 mx-2">
           <a href={props.gitHub} target="_blank" rel="noreferrer">
-            <button>Github</button>
+            <button className="btn btn-primary">Github</button>
           </a>
           <a href={props.deployed} target="_blank" rel="noreferrer">
-            <button className="mx-3">Live Demo</button>
+            <button className="btn btn-primary mx-3">Live Demo</button>
           </a>
         </div>
       </div>
