@@ -3,6 +3,16 @@ import Projects from "./Projects";
 
 const projects = [
   {
+    name: "Gear Out",
+    description:
+      "A MERN Stack E-Commerce Portal meant to provide access to high quality costumes at an affordable rate. Designed with JavaScript, Mongo, and React",
+    techUsed: ["JavaScript", "MongoDB"],
+    image: "gear.png",
+    gitHub: "https://github.com/lelandcypress/Gear_Out",
+    deployed: "https://quiet-garden-76902.herokuapp.com/",
+  },
+
+  {
     name: "S.W.O.R.D",
     description:
       "A full stack Project Task Management App designed for the modern superhero. Developed with Sequalize, Handlebars, and JavaScript.",
@@ -45,15 +55,6 @@ const projects = [
     image: "Sun.PNG",
     gitHub: "https://github.com/lelandcypress/Jacobs_Weather",
     deployed: "https://lelandcypress.github.io/Jacobs_Weather/",
-  },
-  {
-    name: "Workout Tracker",
-    description:
-      "A handy web application that helps you meet your goals by logging your workouts. Using MongoDB and Mongoose.",
-    techUsed: ["JavaScript", "MongoDB"],
-    image: "chart.PNG",
-    gitHub: "https://github.com/lelandcypress/workout_tracker",
-    deployed: "https://stark-oasis-70234.herokuapp.com//",
   },
 
   {

@@ -1,5 +1,5 @@
 import React from "react";
-import chart from "./srcPics/chart.PNG";
+import gear from "./srcPics/gear.png";
 import cli from "./srcPics/CLI.PNG";
 import sword from "./srcPics/sword_logo.png";
 import question from "./srcPics/questionmark.png";
@@ -8,7 +8,7 @@ import dinner from "./srcPics/Dinner.PNG";
 import "../styles/Project.css";
 
 const allImages = {
-  "chart.PNG": chart,
+  "gear.png": gear,
   "CLI.PNG": cli,
   "sword_logo.png": sword,
   "questionmark.png": question,
