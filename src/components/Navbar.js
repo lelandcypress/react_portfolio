@@ -7,39 +7,23 @@ function Navbar({ currentPage, handlePageChange }) {
     <div className="w-100 ">
       <ul className="nav d-flex justify-content-around">
         <li className="nav-item">
-          <a
-            href="#home"
-            onClick={() => handlePageChange("Home")}
-            className="navcss"
-          >
+          <a href="/" className="navcss">
             Home
           </a>
         </li>
 
         <li className="nav-item">
-          <a
-            href="#aboutme"
-            onClick={() => handlePageChange("About")}
-            className="navcss"
-          >
+          <a href="/about" className="navcss">
             About Me
           </a>
         </li>
         <li className="nav-item">
-          <a
-            href="#projects"
-            onClick={() => handlePageChange("Projects")}
-            className="navcss"
-          >
+          <a href="/projects" className="navcss">
             Projects
           </a>
         </li>
         <li className="nav-item">
-          <a
-            href="#contact"
-            onClick={() => handlePageChange("Contact")}
-            className="navcss"
-          >
+          <a href="/contact" className="navcss">
             Contact Me
           </a>
         </li>
