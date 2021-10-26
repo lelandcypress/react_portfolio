@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/Home.css";
-import "../styles/responsive.css";
+import "./Home.css";
+import "../components/responsive.css";
 function Home() {
   return (
     <div className="container mt-4 p-0 home-border">

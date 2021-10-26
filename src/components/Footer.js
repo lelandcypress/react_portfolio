@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/Footer.css";
+import "./Footer.css";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineMailOpen } from "react-icons/hi";

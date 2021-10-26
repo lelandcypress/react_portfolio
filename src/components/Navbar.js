@@ -1,6 +1,6 @@
 import React from "react";
-import "./styles/Header.css";
-import "./styles/responsive.css";
+import "./Header.css";
+import "./responsive.css";
 
 function Navbar({ currentPage, handlePageChange }) {
   return (

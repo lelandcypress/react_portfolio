@@ -1,11 +1,11 @@
 import React from "react";
-import gear from "./srcPics/gear.png";
-import cli from "./srcPics/CLI.PNG";
-import sword from "./srcPics/sword_logo.png";
-import question from "./srcPics/questionmark.png";
-import sun from "./srcPics/Sun.PNG";
-import dinner from "./srcPics/Dinner.PNG";
-import "../styles/Project.css";
+import gear from "../components/srcPics/gear.png";
+import cli from "../components/srcPics/CLI.PNG";
+import sword from "../components/srcPics/sword_logo.png";
+import question from "../components/srcPics/questionmark.png";
+import sun from "../components/srcPics/Sun.PNG";
+import dinner from "../components/srcPics/Dinner.PNG";
+import "./Project.css";
 
 const allImages = {
   "gear.png": gear,
